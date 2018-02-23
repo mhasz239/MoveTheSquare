@@ -67,7 +67,9 @@ public class GameView extends JPanel {
 		
 		// djh2-KEC110-21: changed from GREEN to RED
 		// djh2-YCPlaptop: change from RED to YELLOW
-		g.setColor(MIDNIGHT_BLUE);
+
+		// Tadukoo: changed from YELLOW to CYAN
+		g.setColor(Color.CYAN);
 
 		Square square = model.getSquare();
 		
@@ -85,8 +87,9 @@ public class GameView extends JPanel {
 				Square square = new Square();
 				square.setX(300.0);
 				square.setY(220.0);
-				square.setWidth(95.0);
-				square.setHeight(25.0);
+
+				square.setWidth(100.0);
+				square.setHeight(100.0);
 				model.setSquare(square);
 				
 				GameController controller = new GameController();
